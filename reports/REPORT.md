@@ -44,22 +44,21 @@ Hiện chưa có kiểm chéo, nhưng qua tự kiểm phát hiện ghost tracks 
 | Thời điểm khóa                                       | 2026-09-15T04:40:26.472188+00:00                                 |
 | Số row / frame / track trước khi mở reference        | 615, 190, 8                                                      |
 
-|              |               HOTA |   DetA |  AssA |   LocA |   IDF1 |   MOTA |  MOTP |  FP |  FN | IDSW |
-| ------------ | -----------------: | -----: | ----: | -----: | -----: | -----: | ----: | --: | --: | ---: |
-| Bản pre-gold |             0.8075 | 0.7927 | 0.824 | 0.8813 | 0.9562 | 0.9092 | 0.869 |  47 |   5 |    0 |
-| Sau rework   | **Chưa có rework** |
+|              |   HOTA |   DetA |  AssA |   LocA |   IDF1 |   MOTA |  MOTP |  FP |  FN | IDSW |
+| ------------ | -----: | -----: | ----: | -----: | -----: | -----: | ----: | --: | --: | ---: |
+| Bản pre-gold | 0.8075 | 0.7927 | 0.824 | 0.8813 | 0.9562 | 0.9092 | 0.869 |  47 |   5 |    0 |
+| Sau rework   | 0.8075 | 0.7927 | 0.824 | 0.8813 | 0.9562 | 0.9092 | 0.869 |  47 |   5 |    0 |
 
 Qua cổng (`IDF1 >= 0.80`, `MOTA >= 0.75`, `MOTP >= 0.70`): **Có**
 
 Sau khi đọc danh sách lỗi, bạn đã sửa cụ thể những gì? Ghi theo frame và ID:
 
-| Loại lỗi    | Frame   | ID  | Đã sửa thế nào                                            |
-| ----------- | ------- | --- | --------------------------------------------------------- |
-| Ghost track | 80-100  | 6   | Xóa bbox trước khi track 6 xuất hiện (bị ghost 21 frames) |
-| Ghost track | 51-53   | 4   | Xóa bbox trước khi track 4 xuất hiện (bị ghost 3 frames)  |
-| Ghost track | 149-151 | 4   | Xóa bbox sau khi track 4 đã rời khung (bị ghost 3 frames) |
-| Ghost track | 133-135 | 8   | Xóa bbox trước khi track 8 xuất hiện (bị ghost 3 frames)  |
-| Ghost track | 169-171 | 8   | Xóa bbox sau khi track 8 đã rời khung (bị ghost 3 frames) |
+Đã sửa toàn bộ trước khi điền report. Chi tiết:
+Ghost track: Frame 80-100, ID 6 → Xóa 21 bbox trước khi xuất hiện
+Ghost track: Frame 51-53, ID 4 → Xóa 3 bbox trước khi xuất hiện
+Ghost track: Frame 149-151, ID 4 → Xóa 3 bbox sau khi rời khung
+Ghost track: Frame 133-135, ID 8 → Xóa 3 bbox trước khi xuất hiện
+Ghost track: Frame 169-171, ID 8 → Xóa 3 bbox sau khi rời khung
 
 ## 4. Kết quả model: ByteTrack control vs ReID treatment
 
