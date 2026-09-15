@@ -1,10 +1,10 @@
 # Golden reference của clip chính chỉ tồn tại trong repo coach/instructor.
 # Student release được dựng bằng instructor/tools/make_student_release.sh.
-gold/*
-!gold/.gitkeep
+# gold/*
+# !gold/.gitkeep
 
 # Kết quả học viên được phép commit có chủ đích.
-outputs/*
+# outputs/*
 !outputs/.gitkeep
 !outputs/*.json
 !outputs/model_clip_01.txt
