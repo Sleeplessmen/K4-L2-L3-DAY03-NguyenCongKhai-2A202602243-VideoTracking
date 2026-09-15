@@ -32,6 +32,7 @@ Một lớp duy nhất: **`vehicle`** — xe bốn bánh có động cơ (xe con
 | Xe bị che lâu hơn ngưỡng trên    | **track mới** nếu che > 50 frame (4 giây) mà không có thông tin nào (bán khuất, đổi làn)                                 | Che quá lâu mất tin cậy, tránh gán nhầm                    |
 | Xe rời khung hình rồi quay lại   | mặc định: **track mới**                                                                                                  | Không thể khẳng định là cùng xe, tránh sai lầm             |
 | Hai xe cắt nhau / chồng lên nhau | giữ ID theo **quỹ đạo chuyển động**, không theo bbox — dùng frame trước/sau để xác định                                  | Bbox chồng nhưng xe vẫn là 2 vật thể riêng                 |
+| Xe có bbox ngoài phạm vi tồn tại | **Không được phép** — không có bbox trước khi track xuất hiện hoặc sau khi track rời khung                               | Tránh ghost tracks, đảm bảo tính liền mạch của track       |
 
 ## 3. Luật bbox
 
