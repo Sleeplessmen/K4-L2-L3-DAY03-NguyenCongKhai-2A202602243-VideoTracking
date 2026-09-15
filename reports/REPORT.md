@@ -49,7 +49,7 @@ Ca nào hai người quyết khác nhau, và luật nào còn thiếu trong `GUI
 | Bản pre-gold |      |      |      |      |      |      |      |     |     |      |
 | Sau rework   |      |      |      |      |      |      |      |     |     |      |
 
-Qua cổng (`IDF1 >= 0.80`, `MOTA >= 0.75`, `MOTP >= 0.70`): **có / chưa**
+Qua cổng (`IDF1 >= 0.80`, `MOTA >= 0.75`, `MOTP >= 0.70`): **có**
 
 Sau khi đọc danh sách lỗi, bạn đã sửa cụ thể những gì? Ghi theo frame và ID:
 
@@ -107,14 +107,14 @@ Bạn sẽ sửa gì trong `GUIDELINE_MINI.md`, và đổi gì trong quy trình 
 
 ## 7. Tệp đã nộp
 
-- [ ] `annotations/clip_01/gt.txt`
-- [ ] `annotations/clip_02/gt.txt`
-- [ ] `evidence/pre-gold/clip_01/gt.txt` và `manifest.json`
-- [ ] `GUIDELINE_MINI.md` đã điền
-- [ ] `outputs/eval_vs_gold.json`
-- [ ] `outputs/model_bytetrack_clip_01.txt`
-- [ ] `outputs/model_reid_clip_01.txt`
-- [ ] `outputs/model_run_config.json`
-- [ ] `outputs/eval_bytetrack_vs_gold.json`, `outputs/eval_reid_vs_gold.json`, `outputs/eval_reid_vs_me.json`
+- [x] `annotations/clip_01/gt.txt`
+- [x] `annotations/clip_02/gt.txt`
+- [x] `evidence/pre-gold/clip_01/gt.txt` và `manifest.json`
+- [x] `GUIDELINE_MINI.md` đã điền
+- [x] `outputs/eval_vs_gold.json`
+- [x] `outputs/model_bytetrack_clip_01.txt`
+- [x] `outputs/model_reid_clip_01.txt`
+- [x] `outputs/model_run_config.json`
+- [x] `outputs/eval_bytetrack_vs_gold.json`, `outputs/eval_reid_vs_gold.json`, `outputs/eval_reid_vs_me.json`
 - [ ] `reports/review_partner.md`
-- [ ] `reports/REPORT.md` (file này)
+- [x] `reports/REPORT.md` (file này)
